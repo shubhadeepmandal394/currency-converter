@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="375dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="38dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/enter_amount_in"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="303dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginLeft="58dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginRight="58dp"
+        android:layout_marginBottom="36dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="@string/usd_to_inr_converter"
+        android:textAllCaps="true"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fontFamily="serif-monospace"
+        app:layout_constraintBottom_toTopOf="@+id/nameEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="268dp"
+        android:onClick="convertCurrency"
+        android:text="@string/convert"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/nameEditText" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="409dp"
+        android:layout_height="159dp"
+        android:layout_marginBottom="100dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/allcurrency" />
+
+</android.support.constraint.ConstraintLayout>

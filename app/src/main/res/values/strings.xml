@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Currency Converter</string>
+    <string name="enter_amount_in_usd">Enter Amount in USD*</string>
+    <string name="usd_to_inr_converter">USD to INR Converter</string>
+    <string name="convert">CONVERT</string>
+    <string name="todo">TODO</string>
+    <string name="enter_amount_in">Enter Amount in $ *</string>
+</resources>
